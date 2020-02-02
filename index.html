@@ -2,10 +2,38 @@
 <html>
 <head>
   <title>Library</title>
-  <link rel="stylesheet" type="text/stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-
+<div class="form" style="visibility: hidden;">
+  <form class="form-container" method="POST">
+    <label for="name"><b>Name:</b></label><br><input type="text" name="name" maxlength="26"><br>
+    <label for="author"><b>Author:</b></label><br><input type="text" name="author" maxlength="26"><br>
+    <label for="pages"><b>Pages:</b></label><br><input type="number" min="1" max="9999" maxlength="4" name="pages"><br>
+    <label for="status"><b>Status:</b></label><br><input type="button" class="statusFormBtn" name="status" value="Read" onclick="changeStatusForm();">
+    <input type="submit" name="submit" value="Add Book" class="submitBtn">
+    <input type="button" name="cancel" value="Cancel" class="cancelBtn">
+  </form>
+</div>
+<div class="header">
+    <span class="title">Library</span>
+</div>
+<div class="tContainer">
+  <table class="tableHeader">
+    <tr id="tableHeaderRow">
+      <th class="hName">Name</th>
+      <th class="hAuthor">Author</th>
+      <th class="hPages">Pages</th>
+      <th class="hStatus">Status</th>
+      <th class="hTools"></th>
+    </tr>
+  </tableclass="tableheader">
+  <table id="table">
+  </table>
+</div>
+<div class="bar">
+  <button class="addBook">Add a book</button>
+</div>
 </body>
-<script src="js/scripts.js"></script>
+<script src="js/script.js"></script>
 </html>
