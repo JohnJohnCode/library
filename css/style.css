@@ -1,12 +1,16 @@
+* {
+    font-family: 'Roboto Slab', serif;
+}
+
 body {
     margin: 0;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .title {
     text-align: center;
     color: white;
-    margin-top: 2rem;
+    margin-top: 1.3rem;
     display: inline-block;
 }
 
@@ -58,6 +62,10 @@ th {
 td {
     font-size: 1.25rem;
     width: 10%;
+    max-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .hName {
@@ -173,9 +181,10 @@ td {
     border: 0.08rem solid #bbb;
 	border-radius: 100%;
 	display:inline-block;
-	color:#ffffff;
+    color:#ffffff;
+    font-family: 'Sarpanch', sans-serif;
     font-size: 0.9rem;
-    font-weight: normal;
+    font-weight: bold;
     border: none;
     text-decoration: none;
     padding: 0.06rem 0 0 0;

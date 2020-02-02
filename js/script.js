@@ -172,7 +172,7 @@ function addToTable(library) {
         cell[3].innerHTML = `<button class="status" data-pos="${y}">${library[y].status}</button>`;
         cell[3].classList.add("dStatus");
 
-        cell[4].innerHTML = `<button data-pos="${y}" class="delete">🗙</button>`;
+        cell[4].innerHTML = `<button data-pos="${y}" class="delete">X</button>`;
         cell[4].classList.add("dDelete");
 
         checkOverflow();
