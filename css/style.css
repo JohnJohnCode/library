@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    overflow: auto;
+}
+
+.title {
+    text-align: center;
+    color: white;
+    margin-top: 2rem;
+    display: inline-block;
+}
+
+.header {
+    text-align: center;
+    width: 100%;
+    height: 10rem;
+    background: rgba(0,0,0,1);
+    background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(51,51,51,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(100%, rgba(51,51,51,1)));
+    background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(51,51,51,1) 100%);
+    background: -o-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(51,51,51,1) 100%);
+    background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(51,51,51,1) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(51,51,51,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#333333', GradientType=0 );
+    box-sizing: border-box;
+    font-size: 5.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+tr {
+    line-height: 2.5rem;
+    background-color: #f8f8f8;
+}
+
+tr:hover {
+    background-color:rgba(0,0,0,0.10);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    overflow: auto;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    font-size: 1.6rem;
+}
+
+td {
+    font-size: 1.25rem;
+    width: 10%;
+}
+
+.hName {
+    width: 28.6%;
+}
+
+.hAuthor {
+    width: 30.4%;
+}
+
+.hPages {
+    width: 12.9%;
+}
+
+.hStatus {
+    width: 12.57%;
+}
+
+.hDelete {
+    width: 6,70%;
+}
+
+.tableHeader {
+    position: relative;
+    z-index: 2;
+}
+
+#tableHeaderRow {
+    background-color: white;
+    box-sizing: border-box;
+    border-bottom: 2px double #bbb;
+}
+
+#tableHeaderRow:hover {
+    background-color: white;
+}
+
+.tContainer {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    -webkit-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.30);
+    -moz-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.30);
+    box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.30);
+}
+
+.status {
+    background-color: rgba(51,51,51,1);
+    border: 0.08rem solid #bbb;
+    font-weight: bold;
+    display: inline-block;
+    outline: hidden;
+	color: #ffffff;
+    font-size: 0.9rem;
+    padding: 0.3rem 0;
+    text-decoration: none;
+    width: 5.4rem;
+}
+
+.submitBtn, .statusFormBtn, .cancelBtn {
+    width: 100%;
+    font-weight: bold;
+    display: inline-block;
+    outline: hidden;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+.statusFormBtn {
+    background-color: rgba(51,51,51,1);
+    border: 0.08rem solid #bbb;
+    padding: 0.7rem 0;
+    text-decoration: none;
+    margin: 0.15rem 0 2rem 0;
+}
+
+.submitBtn {
+    background-color: #47d147;
+    border: 0.08rem solid #bbb;
+    padding: 0.7rem 0;
+    text-decoration: none;
+    margin: 0 0 0.4rem 0;
+}
+
+.cancelBtn {
+    background-color: #ff3333;
+    border: 0.08rem solid #bbb;
+    text-shadow: black;
+    padding: 0.7rem 0;
+    text-decoration: none;
+    margin: 0 0 0.15rem 0;
+}
+
+.submitBtn:hover {
+    background-color: #24b53d;
+}
+
+.cancelBtn:hover {
+    background-color: #e31717;
+}
+
+.status:hover, .delete:hover, .addBook:hover, .statusFormBtn:hover {
+    background-color: #0d0d0d;
+}
+
+.status:focus, .delete:focus, .addBook:focus, .submitBtn:focus, .statusFormBtn:focus, .cancelBtn:focus {
+    outline: none;
+}
+
+.delete {
+    background-color: rgba(51,51,51,1);
+    border: 0.08rem solid #bbb;
+	border-radius: 100%;
+	display:inline-block;
+	color:#ffffff;
+    font-size: 0.9rem;
+    font-weight: normal;
+    border: none;
+    text-decoration: none;
+    padding: 0.06rem 0 0 0;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.addBook {
+    background-color: rgba(51,51,51,1);
+    border: 0.08rem solid #bbb;
+    font-weight: bold;
+    display: inline-block;
+    outline: hidden;
+	color: #ffffff;
+    font-size: 0.9rem;
+    padding: 0.3rem 0;
+    text-decoration: none;
+    width: 6.2rem;
+}
+
+.dName {
+    width: 28.27%;
+}
+
+.dAuthor {
+    width: 29.74%;
+}
+
+.dPages {
+    width: 12.57%;
+}
+
+.dStatus {
+    width: 18.57%;
+}
+
+.dDelete {
+    width: 9.18%;
+}
+
+.bar {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form {
+    position: absolute;
+    z-index: 3;
+    font-size: 1.35rem;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.65);
+}
+
+.form-container {
+    width: 20rem;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: white;
+    position: relative;
+    margin: 10% auto;
+    z-index: 4;
+    border: 3px solid #999999;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=number]:focus,
+.form-container input[type=text]:hover, .form-container input[type=number]:hover {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container input[type=text], .form-container input[type=number] {
+    width: 100%;
+    padding: 0.85rem;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+}
+
